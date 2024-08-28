@@ -12,26 +12,26 @@ import { devwork } from "../../data/devwork.json";
         Correcta aplicación de las inteligencias artificiales:
       </h2>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-px mt-8">
-      <div class="p-8 bg-white rounded-3xl" style="width: 550px;">
-        <div class="inline-flex items-center border-b w-full border-white/10">
-          <p class="text-2xl text-black">Pasos a seguir:</p>
+    <div class="grid grid-cols-1 md:grid-cols-1 gap-4 mt-8 lg:grid-cols-1">
+      <div class="flex flex-col w-full bg-white rounded-3xl pt-4  mt-4 p-8">
+        <div class="inline-flex items-center border-b w-full border-gray-300">
+          <p class="text-2xl md:text-3xl lg:text-4xl text-black">Pasos a seguir:</p>
         </div>
-        <div class="divide-y divide-white/10 mt-4">
-          {
-            designwork.map((template) => (
-              <>
-                <div class=" flex flex-col sm:flex-row justify-between gap-4 lg:items-end">
-                  <p class="font-medium leading-6 text-zinc-500 text-sm flex gap-2 items-center">
-                    ⏤
-                    {template.title}
-                  </p>
-                </div>
-              </>
-            ))
-          }
+        <div class="mt-4">
+          {designwork.map((template) => (
+            <div class="flex flex-col sm:flex-row justify-between gap-4 lg:items-end">
+             <ul>
+              <li class="list-disc list-inside"> 
+               {template.title}
+              </li>
+             </ul>
+             
+            </div>
+          ))}
         </div>
       </div>
+    </div>
+    
       
       <!-- <div class="p-8 bg-white rounded-3xl">
         <div class="inline-flex items-center border-b w-full border-white/10">
